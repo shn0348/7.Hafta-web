@@ -1,0 +1,5 @@
+1- Form action: gonder.aspx olsun
+2- fieldset genişliği:350px
+3- Hücreler arası boşluk: 5
+4- Number form etiketi genişliği: 165px 
+5- Butondaki resimler W:50 H:40

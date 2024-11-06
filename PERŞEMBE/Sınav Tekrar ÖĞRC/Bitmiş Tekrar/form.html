@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body bgcolor="#FEE2DE">
+    <table cellspacing="20" border="0" align="center" cellpadding="5">
+        <tr>
+          <td colspan="4">
+            <img src="bilgisayar.png" alt="" height="200" width="1000">
+          </td>
+        </tr>
+        <tr>
+          <th bgcolor="red" ><a href="anasayfa.html">Anasayfa</a></th>
+          <th bgcolor="red" ><a href="tablo.html">Tablo</a></th>
+          <th bgcolor="red" ><a href="video.html">Video</a></th>
+          <th bgcolor="red" ><a href="kayitol.html">Form</a></th>
+        </tr>
+      </table>
+      <form action="uyel.php" method="post">
+        <fieldset style="width: 290px; margin: auto;">
+            <legend>Üyelik Bilgileri</legend>
+            <table>
+                <tr>
+                    <td>E-Posta Adresi(*)</td>
+                    <td><input type="email" name="adsoyad"></td>
+                </tr>
+                <tr>
+                    <td>Şifre(*)</td>
+                    <td><input type="text" name="sifre"></td>
+                </tr>
+                <tr>
+                    <td>Cinsiyet(*)</td>
+                    <td>
+                        <select name="cinsiyet" id="">
+                          <option value="">Erkek</option>
+                          <option value="">Bayan</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Kullanıcı Türü</td>
+                    <td>
+                        <input type="radio" name="kullanitip" checked> Normal<br>
+                        <input type="radio" name="kullanitip"> Yönetici <br>
+                        <input type="radio" name="kullanitip" > Editör<br>
+                        <input type="radio" name="kullanitip" > Yazar
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gezdiğiniz Ülkeler</td>
+                    <td>
+                      <input type="checkbox"  checked> Almanya<br>
+                      <input type="checkbox"> Suriye <br>
+                      <input type="checkbox"> İran<br>
+                      <input type="checkbox"> Rusya<br>
+                      <input type="checkbox"> Amerika
+                    </td>
+                </tr>
+                <tr>
+                  <td>Hakkınızda(*)</td>
+                  <td><textarea name="hakkinda" id="" cols="20" rows="5"></textarea></td>
+              </tr>
+                <tr>
+                    <th><button type="submit">KAYDET</button></th>
+                    <th><button type="reset">TEMİZLE</button></th>
+                </tr>
+
+
+            </table>
+        </fieldset>
+   </form>
+   <br>
+   <br>
+</body>
+</html>

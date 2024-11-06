@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form1</title>
+</head>
+<body>
+    <form action="ekle.html" method="get">
+        <fieldset style="width: 350px;">
+            <legend>İş Başvuru Formu</legend>
+            <table cellspacing="5" border="0" bordercolor="red">
+                <tr>
+                    <th colspan="2" align="left">Çalışmak istediğiniz birim:</th>                                      
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" name="satis"> Satış 
+                        <input type="checkbox" name="kasiyer"> Kasiyer 
+                        <input type="checkbox" name="manav"> Manav 
+                        <input type="checkbox" name="muhasebe" checked> Muhasebe
+                    </td> 
+                </tr>
+                <tr>
+                    <th align="right">İsim:</th>
+                    <td><input type="text" name="ad"></td>
+                </tr>
+                <tr>
+                    <th align="right">E-Posta:</th>
+                    <td><input type="email" name="mail_adresi"></td>
+                </tr>
+                <tr>
+                    <th align="right">Kod(****):</th>
+                    <td><input type="password" name="kod"></td>
+                </tr>
+                <tr>
+                    <th colspan="2" align="left">Mezun Olduğunuz Okul</th>                    
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="radio" name="okul"> Lise
+                        <input type="radio" name="okul"> Önlisans 
+                        <input type="radio" name="okul" checked> Lisans
+                        <input type="radio" name="okul"> Yüksek Lisans
+                    </td>
+                </tr>
+                <tr>
+                    <th align="right">Yaş (1-120 Numara):</th>
+                    <td><input type="number" name="yas" min="1" max="120" style="width: 165px;"></td>
+                </tr>
+                <tr>
+                    <th colspan="2" align="left">Medeni Haliniz</th>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="radio" name="mDurum"> Evli
+                        <input type="radio" name="mDurum" checked> Bekar
+                        <input type="radio" name="mDurum"> Boşanmış
+                        <input type="radio" name="mDurum"> Dul
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2" align="left">İletişim Adresiniz</th>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <select name="mahalle">
+                            <option value="">Mahalle Seçin</option>
+                            <option value="">Karapürçek</option>
+                            <option value="">Doğantepe</option>
+                            <option value="">Önder</option>
+                            <option value="">Çinçin</option>
+                        </select>
+                        <select name="ilce">
+                            <option value="">İlçe Seçin</option>
+                            <option value="">Altındağ</option>
+                            <option value="">Pursaklar</option>
+                            <option value="">Yeni mahalle</option>
+                            <option value="">Çankaya</option>
+                            <option value="">Kazan</option>
+                        </select>
+                        <select name="ilce">
+                            <option value="">İl Seçin</option>
+                            <option value="">Ankara</option>
+                            <option value="">İstanbul</option>
+                            <option value="">Çorum</option>                        
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="CENTER">
+                        <input type="submit" value="KAYDET-GÖNDER">
+                    </td>
+                    <td align="CENTER"> 
+                        <input type="reset" value="SİL-TEMİZLE">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="CENTER">
+                        <button type="submit">
+                            <img src="send.png" alt="" width="50" height="40">
+                        </button>
+                    </td> 
+                    <td align="CENTER"> 
+                        <button type="reset">
+                            <img src="cleaning.png" alt="" width="50" height="40">
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+<form>
+    <fieldset>
+        
+    </fieldset>
+</form>
+</body>
+</html>

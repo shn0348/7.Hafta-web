@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Üye Olma Sayfası</title>
+</head>
+<body bgcolor="#cce5ff">
+    
+    <table align="center">        
+        <tr>
+            <td colspan="4"><img src="belgeler/ankararesim.jpg" align="center"></td>
+        </tr>
+        <tr>
+            <td><a href="anasayfa.html">ANASAYFA </a></td>
+            <td><a href="video.html">ANKARA'NIN VİDEOSU</a></td>
+            <td><a href="uyeol.html">ÜYE OL</a></td>
+            <td><a href="tablo.html">TABLO</a></td>
+        </tr>          
+    </table>
+    <h2 align="center">ÜYE OLMA SAYFAMIZA HOŞ GELDİNİZ</h2>
+    
+   <form action="uyel.php" method="post">
+        <fieldset style="width: 290px; margin: auto;">
+            <legend>Üyelik Bilgileri</legend>
+            <table>
+                <tr>
+                    <td>Ad Soyad</td>
+                    <td><input type="text" name="adsoyad"></td>
+                </tr>     
+                <tr>
+                    <td>Kullanıcı Adı(*)</td>
+                    <td><input type="text" name="kullaniciadi"></td>
+                </tr>
+                <tr>
+                    <td>Parola(*)</td>
+                    <td><input type="text" name="sifre"></td>
+                </tr> 
+                <tr>
+                    <td>Cinsiyet(*)</td>
+                    <td>
+                        <input type="radio" name="cs" checked> Bay
+                        <input type="radio" name="cs"> Bayan
+                    </td>
+                </tr> 
+                <tr>
+                    <td>Bildiğiniz Diller(*)</td>
+                    <td>
+                        <input type="checkbox" checked> Türkçe<br>
+                        <input type="checkbox" > İngilizce <br>
+                        <input type="checkbox" > Almanca<br>
+                        <input type="checkbox" > Rusça
+                    </td>               
+                </tr> 
+                <tr>
+                    <td>Memleket(*)</td>
+                    <td>
+                        <select name="memleket" id="">
+                            <option value="">Memleketinizi Seçin</option>
+                            <option value="">Ankara</option>
+                            <option value="">Muş</option>
+                            <option value="">Denizle</option>
+                            <option value="">Muğla</option>
+                        </select>
+                    </td>
+                </tr> 
+                <tr>
+                    <td align="left"><button type="submit">KAYDET</button></td>
+                    <td align="right"><button type="reset">TEMİZLE</button></td>
+                </tr>
+                
+                               
+            </table>
+        </fieldset>
+   </form>
+
+
+   
+</body>
+</html>

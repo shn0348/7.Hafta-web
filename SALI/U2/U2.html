@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form1</title>
+</head>
+<body>
+    <form action="ekle.html" method="get">
+        <fieldset style="width: 400px;">
+            <legend>Öğrenci Bilgi Formu</legend>
+            <table cellspacing="5" border="0" bordercolor="red">
+                <tr>
+                    <th colspan="2" align="left">Sevdiğiniz bilgisayar dersleri:</th>                                      
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" name="satis"> Web Tasarımı 
+                        <input type="checkbox" name="kasiyer" checked> Grafik 
+                        <input type="checkbox" name="manav"> NTP 
+                        <input type="checkbox" name="muhasebe"> Mobil
+                    </td> 
+                </tr>
+                <tr>
+                    <th align="right">Öğrenci Adı:</th>
+                    <td><input type="text" name="ad"></td>
+                </tr>
+                <tr>
+                    <th align="right">E-Mail:</th>
+                    <td><input type="email" name="mail_adresi"></td>
+                </tr>
+                <tr>
+                    <th align="right">Parola:</th>
+                    <td><input type="password" name="kod"></td>
+                </tr>
+                <tr>
+                    <th colspan="2" align="left">Okuduğunuz Sınıf Düzeyi</th>                    
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="radio" name="okul"> 9.Sınıf
+                        <input type="radio" name="okul"> 10.Sınıf 
+                        <input type="radio" name="okul" checked> 11.Sınıf
+                        <input type="radio" name="okul"> 12.Sınıf
+                    </td>
+                </tr>
+                <tr>
+                    <th align="right">Okul No (1-99999 Numara):</th>
+                    <td><input type="number" name="yas" min="1" max="99999" style="width: 165px;"></td>
+                </tr>
+                <tr>
+                    <th colspan="2" align="left">Askerlik Durumu</th>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="radio" name="mDurum" checked> Yaş Tutmuyor
+                        <input type="radio" name="mDurum"> Hazır Asker
+                        <input type="radio" name="mDurum"> Tecil
+                        <input type="radio" name="mDurum"> Muaf
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2" align="left">Doğum Tarihi ve Şehir</th>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <select name="gun">
+                            <option value="">Gün Seçiniz</option>
+                            <option value="">01</option>
+                            <option value="">02</option>
+                            <option value="">03</option>   
+                            <option value="">...</option> 
+                            <option value="">31</option>                       
+                        </select>                       
+                        <select name="ay">
+                            <option value="">Ay Seçin</option>
+                            <option value="">Ocak</option>
+                            <option value="">Şubat</option>
+                            <option value="">Mart</option>
+                            <option value="">Nisan</option>
+                            <option value="">Mayıs</option>
+                        </select>
+                        <select name="yil">
+                            <option value="">Yıl Seçin</option>
+                            <option value="">2012</option>
+                            <option value="">2013</option>
+                            <option value="">...</option>
+                            <option value="">2024</option>
+                        </select>                      
+                       
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2" align="left">Özgeçmiş Bilgilendirme</th>
+                </tr>
+                <tr>                   
+                    <td colspan="2">
+                       <textarea name="" id="" cols="50" rows="8"></textarea>
+                    </td>
+                </tr>
+              
+                <tr>                     
+                    <td align="CENTER"> 
+                        <button type="reset">
+                            <img src="cleaning.png" alt="" width="50" height="40">
+                        </button>
+                    </td>
+                    <td align="CENTER">
+                        <button type="submit">
+                            <img src="send.png" alt="" width="50" height="40">
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
